@@ -1,0 +1,47 @@
+Code was written in ruby,
+
+Database: sqlite3
+
+Download Files here
+
+File: word.rb
+
+Connecting database using sqlite3 adbapter and active_record ORM.
+
+File: install.sh [only for debian package]
+
+run install.sh
+
+$sh install.sh
+Others should install
+
+ruby, rubygems
+
+gems: sqlite3, active_record, nokogiri
+
+File: upload.rb
+
+You dont need to run this script. if you have word.db file. This ruby program scraps
+
+all word and meaning from http://ta.wiktionary.org/wiki/%E0%AE%AE%E0%AF%81%E0%AE%A4%E0%AE%B1%E0%AF%8D_%E0%AE%AA%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AF%8D
+
+and save into sqlite database.
+
+File: word.db
+
+This is database of all words and meanings  which was saved by upload.rb script.
+
+This application has autocomplete functionality.
+
+This is first version of script. code was in repo, url: https://github.com/sathia27/dictionary
+
+Feel free to edit the code. You can change to any languange instead of tamil by making some changes to upload.rb.
+
+How to run
+
+After installation,
+
+Go to that folder and run dict.rb
+
+$cd dictionary
+$ruby dict.rb
